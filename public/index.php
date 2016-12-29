@@ -76,9 +76,9 @@ $requests->setHandler(
 
 $requests->setPrefix('/requests');
 
-$requests->get('/type', 'type');
-$requests->post('/add', 'add');
-$requests->post('/vote', 'vote');
+$requests->get('/type', 'getByTypes');
+$requests->post('/add', 'addReuqest');
+$requests->post('/vote', 'addVote');
 
 $app->mount($requests);
 

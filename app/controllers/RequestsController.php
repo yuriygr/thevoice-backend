@@ -4,7 +4,7 @@ use Phalcon\Mvc\Controller;
 
 class RequestsController extends Controller
 {
-    public function type()
+    public function getByTypes()
     {
 		// Отчищаем текст от скверны
 		$type = $this->request->get('type', 'striptags');
@@ -31,7 +31,7 @@ class RequestsController extends Controller
 		return $this->response->setJsonContent($res);
     }
 
-    public function add()
+    public function addReuqest()
     {
 		// Отчищаем текст от скверны
 		$request_text = $this->request->getPost('request_text', 'striptags');
@@ -60,7 +60,7 @@ class RequestsController extends Controller
 		return $this->response->setJsonContent($res);
     }
 
-    public function vote()
+    public function addVote()
     {
 		// Отчищаем id от скверны
 		$request_id = $this->request->getPost('request_id', 'int');
