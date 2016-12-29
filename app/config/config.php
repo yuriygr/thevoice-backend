@@ -18,7 +18,7 @@ $config = new \Phalcon\Config([
 		'controllersDir'	=> APP_DIR . '/controllers/',
 		'modelsDir'			=> APP_DIR . '/models/',
 		'baseUri'			=> '/',
-		'cryptSalt'			=> getenv('CRYPT_SALT'),
-		'version'			=> getenv('VERSION_NUMBER')
+		'cryptSalt'			=> 'e*A&Sy|:+.u>/6m,$D',
+		'version'			=> '1.0.3'
 	],
 ]);
