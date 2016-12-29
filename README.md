@@ -9,7 +9,7 @@ Backend на Phalcon PHP для **THEVOICE**
 Для запуска приложения необходимы:
 
 * PHP >= 7.0
-* Nginx c php-fpm.
+* Nginx c php-fpm
 * Phalcon Framework >= 3.0
 
 ### Конфигурация

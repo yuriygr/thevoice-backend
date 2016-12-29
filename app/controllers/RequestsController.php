@@ -4,10 +4,15 @@ use Phalcon\Mvc\Controller;
 
 class RequestsController extends Controller
 {
-    public function getByTypes()
+    public function getByType()
     {
-		// Отчищаем текст от скверны
+		// Отчищаем тип от скверны
 		$type = $this->request->get('type', 'striptags');
+
+		// Проверка на наличие типа
+		if (!$type) {
+			throw new \Phalcon\Exception('Необходим тип');
+		}
 
 		// Ищем реквести с нужным статусом
 		$requests = Requests::find([
