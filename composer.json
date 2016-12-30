@@ -21,14 +21,19 @@
 			"url": "https://github.com/yuriygr/thevoice-backend"
 		}
 	],
-    "support": {
-        "email": "a1d516ac5f5d290@gmail.com",
-        "issues": "https://github.com/yuriygr/thevoice-backend/issues"
-    },
+	"support": {
+		"email": "a1d516ac5f5d290@gmail.com",
+		"issues": "https://github.com/yuriygr/thevoice-backend/issues"
+	},
 	"require": {
 		"php":">=7.0",
 		"ext-phalcon": "^3.0",
 		"vlucas/phpdotenv": "^2.4"
 	},
-	"minimum-stability": "dev"
+	"scripts": {
+		"post-root-package-install": [
+			"php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+		],
+	},
+	"minimum-stability": "stable"
 }
