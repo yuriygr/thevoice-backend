@@ -27,7 +27,7 @@
     },
 	"require": {
 		"php":">=7.0",
-		"ext-phalcon": ">=3.0.0",
+		"ext-phalcon": ">=3.*",
 		"vlucas/phpdotenv": "^2.4"
 	}
 }
