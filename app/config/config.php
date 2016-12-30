@@ -3,9 +3,9 @@
 $config = new \Phalcon\Config([
 	'database' => [
 		'host'     => getenv('DATABASE_HOST'),
-		'username' => getenv('DATABASE_NAME'),
-		'password' => getenv('DATABASE_USER'),
-		'dbname'   => getenv('DATABASE_PASS'),
+		'username' => getenv('DATABASE_USER'),
+		'password' => getenv('DATABASE_PASS'),
+		'dbname'   => getenv('DATABASE_NAME'),
 		'charset'  => getenv('DATABASE_CHARSET')
 	],
 	'redis' => [
