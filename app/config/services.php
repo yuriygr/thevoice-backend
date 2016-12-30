@@ -26,7 +26,7 @@ $di->set('db', function () use ($config) {
 /**
  * If the configuration specify the use of metadata adapter use it or use memory otherwise
  */
-/*$di->set('modelsMetadata', function () use ($config) {
+$di->set('modelsMetadata', function () use ($config) {
 	return new \Phalcon\Mvc\Model\Metadata\Redis([
 		'host' 			=> $config->redis->host,
 		'port' 			=> $config->redis->port,
@@ -34,7 +34,7 @@ $di->set('db', function () use ($config) {
 		'statsKey' 		=> '_PHCM_MM',
 		'lifetime' 		=> $config->redis->lifetime
 	]);
-});*/
+});
 
 /**
  * Request

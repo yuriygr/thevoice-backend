@@ -1,5 +1,33 @@
 {
-    "require": {
-        "vlucas/phpdotenv": "^2.4"
-    }
+	"name": "yuriygr/thevoice-backend",
+	"version": "1.0.3",
+	"keywords": [
+		"phalcon",
+		"framework",
+		"sample app",
+	],
+	"type": "project",
+	"license": "BSD-3",
+	"homepage": "https://github.com/yuriygr/thevoice-backend",
+	"authors" : [
+		{
+			"name" : "Yuriy Grinev",
+			"email" : "a1d516ac5f5d290@gmail.com"
+		}
+	],
+	"repositories": [
+		{
+			"type": "git",
+			"url": "https://github.com/yuriygr/thevoice-backend"
+		}
+	],
+    "support": {
+        "email": "a1d516ac5f5d290@gmail.com",
+        "issues": "https://github.com/yuriygr/thevoice-backend/issues"
+    },
+	"require": {
+		"php":">=7.0",
+		"ext-phalcon": ">=3.0.0",
+		"vlucas/phpdotenv": "^2.4"
+	}
 }

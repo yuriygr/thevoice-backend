@@ -34,7 +34,7 @@ define('APP_HEADERS', [
 include(BASE_DIR . '/vendor/autoload.php');
 
 /**
- * Environment 
+ * Read environment 
  */
 include(APP_DIR . '/config/environment.php');
 
