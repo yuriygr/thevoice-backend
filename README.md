@@ -22,4 +22,4 @@ Backend на Phalcon PHP для **THEVOICE**
 
 Не знаю зачем вам это, но вдруг
 
-`composer create-project yuriygr/thevoice-backend --stability=dev --prefer-dist --profile --verbose`
+`composer create-project yuriygr/thevoice-backend . --stability=dev --prefer-dist --profile --verbose`
