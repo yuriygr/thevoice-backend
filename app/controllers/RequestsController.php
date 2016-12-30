@@ -14,6 +14,9 @@ class RequestsController extends Controller
 			throw new \Phalcon\Exception('Необходим тип');
 		}
 
+		//
+		//TODO: Сортировка разная в зависимости от типа
+
 		// Ищем реквести с нужным статусом
 		$requests = Requests::find([
 			'type = :type:',
