@@ -17,3 +17,9 @@ Backend на Phalcon PHP для **THEVOICE**
 Все настройки базы данных находятся в файле окружения `.env`.
 
 Перед началом работы, необходимо переименновать `.env.example` в `.env` и внети необходимые изменения.
+
+### Установка
+
+Не знаю зачем вам это, но вдруг
+
+`composer create-project yuriygr/thevoice-backend --stability=dev --prefer-dist --profile --verbose`
